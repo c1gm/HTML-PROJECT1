@@ -5,13 +5,32 @@
     <meta charset="utf-8">
     <title>Weintrauth Ádám</title>
     <style>
+      div.img_cont {
+          background-position: center;
+          background-size: cover;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          top: 0;
+          position: fixed;
+          z-index: -1;
+      }
+
+      div.img_cont div.img_uhd {
+          opacity: 0;
+          background-size: cover;
+          background-position: center;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          top: 0;
+          position: absolute;
+      }
+
       body {
         text-align: center;
-        background: url("background.jpg") white no-repeat;
         color: white;
         font-family: marker felt;
-        background-position: center;
-        background-size: cover;
       }
 
       img {
@@ -48,6 +67,14 @@
     </style>
   </head>
   <body>
+    <div class="img_cont" style="background-image: url(background.jpg)">
+      <div class="img_uhd"></div>
+      <div class="shaders">
+        <div class="topLeft"></div>
+        <div class="topRight"></div>
+        <div class="bottom"></div>
+      </div>
+    </div>
     <img src="https://avatars2.githubusercontent.com/u/63867002?s=460&u=2ee5c0d65caba5e8b673d34d924e720ecf98565c&v=4" alt="">
     <h1>Weintrauth Ádám</h1>
     <p>Hi! My name is Ádám.</p>
